@@ -10,6 +10,12 @@ def product(list):
         product = product * list[idx]
     return product
 
+def reverse(list):
+    reversed = []
+    for idx in range(len(list)):
+        reversed.append(list[len(list)-1-idx])
+    return reversed
+
 def main():
     size = int(input("Enter the size of your list: "))
     list = []
@@ -19,4 +25,3 @@ def main():
     product_of_list = product(list)
     print(f'The sum of elements is {sum_of_list}')
     print(f'The product of elements is {product_of_list}')
-    
