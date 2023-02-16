@@ -3,3 +3,9 @@ def sum(list):
     for idx in range(len(list)):
         output = output + list[idx]
     return output
+
+def product(list):
+    product = 1
+    for idx in range(len(list)):
+        product = product * list[idx]
+    return product
